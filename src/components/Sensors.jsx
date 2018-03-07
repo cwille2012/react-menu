@@ -1,15 +1,15 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import FullRoster from './FullRoster'
-import Player from './Player'
+import SensorList from './SensorList'
+import Sensor from './Sensor'
 
 const Sensors = () => (
   <div>
     <h3>Sensor List</h3>
     <Switch>
-    <Route exact path='/roster' component={FullRoster}/>
-    <Route path='/roster/:number' component={Player}/>
-  </Switch>
+      <Route exact path='/sensors' component={SensorList}/>
+      <Route path='/sensors/:id' component={Sensor}/>
+    </Switch>
   </div>
 )
 
